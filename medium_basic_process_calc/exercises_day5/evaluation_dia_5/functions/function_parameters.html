@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input_parameters</title>
+</head>
+<body>
+    <div>
+    <label for="">Parámetro 1</label>
+    <input type="text" id="input1">
+    </div>
+<br>
+    <div>
+        <label for="">Parámetro 1</label>
+        <input type="text" id="input2">
+    </div>
+<br>
+    <div>
+        <h1 id="resulth1"></h1>
+    </div>
+<br>
+    <div>
+            <button onclick="send()" >Enviar</button>
+    </div>
+    
+    <script>
+
+            function obtenerDatos(inputone, inputtwo){
+                let result = +inputone + +inputtwo;
+                return result;
+            }
+
+            function send(){
+                let inputone1 = document.getElementById('input1');
+                let inputtwo2 = document.getElementById('input2');
+                let h1 = document.getElementById('resulth1');
+                h1.style.color='red';
+                let operacion =obtenerDatos(inputone1.value, inputtwo2.value);
+                h1.textContent = operacion;
+            }
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set_Timeout</title>
+</head>
+<body>
+    
+<input type="number" placeholder="digite un numero" id="numerUser">
+
+<button onclick="timeout()">Enviar</button>
+
+<h1 id="textoAlerta" style="color: red;">ALERTADO</h1>
+
+<script>
+
+        let obtenUserNumber = document.getElementById('numerUser');
+        let textoAlerta = document.getElementById('textoAlerta');
+
+        
+
+            function timeout(){
+                setTimeout(send, 1000 * obtenUserNumber.value);
+            }
+                   
+                function send(){
+                    textoAlerta.textContent = "HOLA LOCO" ;  
+                    textoAlerta.style.color='green';
+
+        }
+            
+    </script>
+
+</body>
+</html>

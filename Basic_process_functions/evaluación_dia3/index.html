@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación</title>
+</head>
+<body onload="fechera()">
+    
+<div>
+<div>
+    <p >Tiempo límite: 30 Segundos</p>
+    <p id="sodebottom">lugar</p>
+    <span id="sideTop">
+        00:00:00
+    </span>
+</div>
+<div class="class1">
+    <label for="">Pregunta 1</label><br>
+    <input type="text" id="first" name="">
+</div>
+<div class="class1">
+    <label for="">Pregunta 2</label><br>
+    <input type="text" id="second" name="">
+</div>
+<div class="class1">
+    <label for="">Pregunta 3</label><br>
+    <input type="text" id="third" name="">
+</div>
+<div class="class1">
+    <label for="">Pregunta 4</label><br>
+    <input type="text" id="fourthd" name="">
+</div>
+<div class="class1">
+    <label for="">Pregunta 5</label><br>
+    <input type="text" id="five" name="">
+</div>
+
+<div>
+<button onclick="send()" id="buttonSend">Enviar respuestas</button>
+</div>
+
+<div>
+<button onclick="locations()" id="location">Volver a Intentarlo</button>
+</div>
+
+<script>
+
+        let interval;
+        let timeout;
+
+    function fechera(){
+        let interval = setInterval(fexxx, 1000);
+        let timeout = setTimeout(fec, 1000 * 30);
+
+        document.getElementById('sodebottom').textContent = 30;
+    }
+             function fexxx(){
+              let contador =  document.getElementById('sodebottom').textContent;
+                document.getElementById('sodebottom').textContent = contador - 1;
+
+                if (contador <=1) {
+                    clearInterval(interval);
+                    document.getElementById('sodebottom').textContent = 0;
+                }
+
+                 }
+
+        function fec(){
+            
+            let sidetwo = document.getElementById('sideTop');
+            sidetwo.style.color='red';
+            sidetwo.textContent = 'Game Over ';
+            
+        }
+        
+    function send(){
+        let fecha= new Date();
+        generalDate = fecha.toLocaleDateString();
+        let one = document.getElementById('first').value;
+        let two = document.getElementById('second').value;
+        let three = document.getElementById('third').value;
+        let four = document.getElementById('fourthd').value;
+        let five = document.getElementById('five').value;
+        let General = 'Respuesta 1 => ' + one + ' Respuesta 2 => ' + two + ' Respuesta 3 => ' + three + ' Respuesta 4 => ' + four + ' Respuesta 5 => ' + five;
+        alert(General + generalDate);
+        clearTimeout(timeout);
+        clearInterval(interval);
+            document.getElementById('sideTop').textContent="Finalizada con Exito";
+            document.getElementById('sodebottom').textContent = "Gracias.";
+
+    }
+
+    function locations(){
+        
+        location.reload();
+
+    }
+
+
+</script>
+
+</body>
+</html>

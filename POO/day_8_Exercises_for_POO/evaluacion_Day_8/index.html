@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index8.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+
+        <h1>Registro de empleados</h1>
+        <h3>A continuación describa sus datos personales para su registro</h3>
+    
+    </div>
+
+        <div>
+            <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre">
+            </div>      
+
+        <div>
+            <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido">
+            </div>      
+
+        <div>
+            <label for="Identificación">Identificación</label>
+                <input type="text" id="Identificación">
+            </div>
+
+        <div>
+            <label for="Salario">Salario</label>
+                <input type="text" id="Salario">
+            </div>      
+
+        <div>
+            <label for="Cargo">Cargo</label>
+                <input type="text" id="Cargo">
+            </div>
+
+<div>
+
+    <button onclick="getValues()">Enviar</button><br>
+    <button onclick="alertparaSalidaDatos()">Mostrar Empleados</button>
+
+</div>
+
+<div >
+    <ul id="MostrarEmpleados">
+
+    </ul>
+</div>
+
+</body>
+</html>

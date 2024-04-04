@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    
+<div>    
+<h1>Boletin del estudiante: David López</h1>
+
+<img src="/medium_basic_process_calc/Process_day6/images/Fotografia_dlp.PNG" alt="Fotografia_dlp" style="width: 180px; height: 180px; border-radius: 50%; border:solid rgb(56, 6, 102)">
+</div>
+
+    <div>
+
+        <h2>Nota de la materia:</h2>
+
+        <span id="Answer"></span>
+
+        <label for="election">Elija entre las siguientes materias la nota que desea conocer</label>
+
+    </div>
+
+    <div><br>
+        <button  onclick="functionmatem()"   id="Matematicas">  Matematicas </button>
+        <button  onclick="functionsocial()"  id="Sociales"> Sociales </button>
+        <button  onclick="functionespan()"   id="Español">  Español </button>
+        <button  onclick="functioningles()"  id="Ingles"> Ingles </button>
+        <button  onclick="functionbiologia()"id="Biología"> Biología </button>
+        <button  onclick="functionfiloso()"  id="Filosofía"> Filosofía </button>
+        <button  onclick="functionquimica()" id="Química"> Química </button>
+    </div><br>
+
+    <div>
+        <span>Materias Generales</span><br><br>
+        <input type="checkbox" onclick="Todas()"> <span id="Todas">Todas</span><br><br>
+        
+        <ul id="ordenatedList">
+
+            
+        </ul>
+        
+    </div>
+
+    <div>
+        <button onclick="promedio()">Generar Promedio</button><br><br>
+        <span id="answerP"></span><br><br>
+    </div>
+
+    <div>
+
+        <input type="checkbox" onclick="mostHighNote()">Conocer calificación mas Alta<br><br>
+        <h3 id="mostHighNoteL"></h3><br><br>
+
+        <input type="checkbox" onclick="materiasAplazadas()">¿Materias a Aplazar?<br><br>
+        <h3 id="materias_a_aplazar"></h3><br>
+        
+
+    </div>
+
+    <div>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

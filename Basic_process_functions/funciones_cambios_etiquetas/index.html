@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Query</title>
+</head>
+<body>
+
+    <input type="text" id="nombre">
+    <button onclick="enviar()">Enviar</button>  
+    <h1 id="h1_ref">Buenas tardes Individuo</h1>
+
+<script>
+        function enviar() {
+            let nombreUsuario = document.getElementById('nombre');
+            let mostrarTexto =document.getElementById('h1_ref');
+            let salida = 'Hola ' + nombreUsuario.value;
+
+            mostrarTexto.textContent = salida; 
+
+        }
+
+
+</script>
+
+</body>
+</html>

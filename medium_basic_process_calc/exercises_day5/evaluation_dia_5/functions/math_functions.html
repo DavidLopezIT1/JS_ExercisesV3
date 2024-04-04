@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>matematica lineal</title>
+</head>
+<body>
+    <h1>Numero Aleatorio: <span id="spanes">---</span></h1>
+
+    <div>
+        <button onclick="aleatorio()"> Send</button>
+    </div>
+
+    <script>
+        
+        function aleatorio(minimo, maximo) {
+            let spanes = document.getElementById('spanes');
+            maximo = +maximo + 1;
+            let variableAlea = Math.round(Math.random() * 10);
+            
+            spanes.textContent = variableAlea;
+
+        }
+
+
+    </script>
+</body>
+</html>
