@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+
+    <div id="master"></div>
+
+        <script>
+            
+            let variableJson;
+            let elemento1 = new XMLHttpRequest();
+            
+            elemento1.open('GET', 'ejercicio8.json', true);
+            elemento1.responseType = 'json';
+            elemento1.onload = function() {
+                if(elemento1.status === 200){
+                    variableJson = elemento1.response;
+
+                    let documentoT = document.getElementById('master');
+                    documentoT.textContent = variableJson.estudiantes;
+
+                }
+            }
+
+            elemento1.send();
+        </script>
+    
+</body>
+</html>

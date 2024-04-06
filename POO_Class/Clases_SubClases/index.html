@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    // Clases que terminan siendo = a los objetos prototipicos que podemos usar para crear ojetos e instancias de onjetos
+    class Persona {
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+}
+
+// SubClases que podemos utilizar extendiendo los atributos de una clase especifica para usarlos en nuestra subclase
+
+ class Empleado extends Persona{
+        constructor(nombre, apellido, legajo){
+            super(nombre, apellido);
+            this.legajo = legajo;
+            
+        }
+ }
+</script>
+
+</body>
+</html>

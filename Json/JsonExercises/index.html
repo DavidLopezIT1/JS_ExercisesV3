@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+
+    <div id="master"></div>
+
+
+    <script>
+       let  sscript = {
+    
+    "nombre":"Collegium",
+    "direccion": {
+        "calle": "Calle Publica 123",
+        "ciudad": "Buenos Aires"
+    } ,
+    
+    "cantEstudiantes": 3,
+    "estudiantes":[
+        "Pedro Picapiedra",
+        "Pablo Marmol",
+        "Vilma Picapiedra"
+        ]
+    
+}
+
+let Contenido = document.getElementById("master");
+Contenido.textContent = sscript.nombre;
+
+</script>
+    
+</body>
+</html>

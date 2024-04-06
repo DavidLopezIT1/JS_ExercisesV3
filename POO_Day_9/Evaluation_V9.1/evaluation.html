@@ -14,46 +14,50 @@
         
         <strong id="Automovil1">Automovil 1</strong><br><br>
         <span>marca:</span>
-        <input type="text" id="marcaI"><br>
+        <input type="text" id="marcaI" value="Chevrolet"><br>
         <span>modelo:</span>
-        <input type="text" id="modeloI"><br>
+        <input type="text" id="modeloI" value="Camaro RS"><br>
         <span>color:</span>
-        <input type="text" id="colorI"><br>
+        <input type="text" id="colorI" value="Amarillo"><br>
         <span>anio:</span>
-        <input type="text" id="anioI"><br>
+        <input type="text" id="anioI" value="2022"><br>
         <span>titular:</span>
-        <input type="text" id="titularI"><br>
+        <input type="text" id="titularI" value="David L"><br>
     </div><br>
     <div>
         <strong id="Automovil2">Automovil 2</strong><br><br>
         <span>marca:</span>
-        <input type="text" id="marca2"><br>
+        <input type="text" id="marcaII" value="Bugatti"><br>
         <span>modelo:</span>
-        <input type="text" id="modelo2"><br>
+        <input type="text" id="modeloII" value="Chiron"><br>
         <span>color:</span>
-        <input type="text" id="color2"><br>
+        <input type="text" id="colorII" value="Azul"><br>
         <span>anio:</span>
-        <input type="text" id="anio2"><br>
+        <input type="text" id="anioII" value="2024"><br>
         <span>titular:</span>
-        <input type="text" id="titular2"><br>
+        <input type="text" id="titularII" value="Juan L"><br>
     </div><br>
+
+
     <div>
         <strong id="Automovil3">Automovil 3</strong><br><br>
         <span>marca:</span>
-        <input type="text" id="marca3"><br>
+        <input type="text" id="marcaIII" value="Porsche"><br>
         <span>modelo:</span>
-        <input type="text" id="modelo3"><br>
+        <input type="text" id="modeloIII" value="Carrera 911 Super Sport"><br>
         <span>color:</span>
-        <input type="text" id="color3"><br>
+        <input type="text" id="colorIII" value="Gris Plata"><br>
         <span>anio:</span>
-        <input type="text" id="anio3"><br>
+        <input type="text" id="anioIII" value="2025"><br>
         <span>titular:</span>
-        <input type="text" id="titular3"><br>
+        <input type="text" id="titularIII" value="Olga O"><br>
     </div><br><br>
 
+    
+
     <div>
-        <button >Send</button>
-        <button onclick="alertparaSalidaDatos()">Mostrar</button>
+        <button onclick="CreAutomovilI(), CreAutomovilII(), CreAutomovilIII()">Send</button>
+        <button onclick="SalidaDatos()">Salida</button>
 
         <style>
             button{ 
@@ -70,7 +74,24 @@
                 border: solid 2px rgba(0, 0, 0, 0);
                 border-radius: 3px;
             }
+            li{
+                border: solid 1px red;
+                width: 20%;
+            }
+            
+
+
+
         </style>
     </div>
+
+    <div>
+        <ul id="Salida">
+
+
+        </ul>
+
+    </div>
+
 </body>
 </html>

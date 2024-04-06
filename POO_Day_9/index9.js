@@ -37,7 +37,6 @@ function CreAutomovilI(){
 
         // Automovil.prototype.VenderAutomovil= function(nuevoTitular){
         //         nuevoTitular = this.titular;
-
         // }
 
 

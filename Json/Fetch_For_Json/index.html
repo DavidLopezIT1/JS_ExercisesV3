@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+    <div id="ResultJson"></div>
+ 
+    <script>
+
+        let titulo;
+        let director;
+        let lanzamiento;
+        let duracion;
+        let actores;
+        let premioOscar;
+
+        function obtenerDatos() {
+
+                let datosJson;
+                fetch(index.json).then(promesa => promesa.json()).then((salida) =>{    
+                titulo = salida.titulo ,
+                director = salida.director ,
+                lanzamiento = salida.lanzamiento ,
+                duracion = salida.duracion ,
+                actores = salida.actores ,
+                premioOscar = salida.premioOscar 
+            })      
+        }
+
+    </script>
+</body>
+</html>
