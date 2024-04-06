@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="indexJson.js"></script>
     <title>Proyecto</title>
 </head>
 <body>
     
+    <h1 id="Banco"></h1>
+
+    <span><strong>Cliente:</strong></span> 
+    <span id="Cliente"></span><br>
+
+
+    <span><strong>Nro cuenta:</strong></span> <span id="Nro_cuenta">
+    </span><br>
+
+    <span><strong>Monto Dolres:</strong></span>
+    <span id="MontoUSD"></span><br>
+
+    <span><strong>Monto Euros:</strong></span> 
+    <span id="MontoEUR"></span><br>
+
+    <span><strong>CBU:</strong></span> 
+    <span id="CBU"></span><br>
+
+    <span><strong>Fecha de apertura:</strong></span> 
+    <span id="Apertura"></span><br><br>
+
+    <div>
+        <button onclick="BuscarInf()">Validar</button>
+    </div>
+
+    <script>
+       
+       let datosJson;
+
+
+        fetch('resumen.json').then(promesa => promesa.json())
+        .then((salida) => {
+
+            datosJson = salida;
+                
+                let Banco = document.getElementById('Banco');
+                let Nro_cuenta = document.getElementById('Nro_cuenta');
+                let MontoUSD = document.getElementById('MontoUSD');
+                let MontoEUR = document.getElementById('MontoEUR');
+                let CBU = document.getElementById('CBU');
+                let Apertura = document.getElementById('Apertura');
+
+                Banco.textContent = datosJson.banco;
+                Cliente.textContent = datosJson.titular;
+                Nro_cuenta.textContent = datosJson.nro_cuenta;
+                MontoUSD.textContent = datosJson.saldo[0].monto;
+                for(let item of datosJson.saldo){
+                    for( let itemsInd in item){
+                        MontoEUR.textContent = item[itemsInd];
+                    }
+                }
+                // MontoUSD.textContent = datosJson.saldo[0] ;
+                CBU.textContent = datosJson.cbu ;
+                Apertura.textContent = datosJson.abierto ;
+
+            }).catch(function(error) { alert(error) })
+
+
+    </script>
+
 </body>
 </html>
