@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispersor</title>
+</head>
+<body>
+
+    <header style="display: flex;">
+
+        <div>
+            <button id="button1">Titulo</button>
+
+            <ul style="list-style: none; display: none; " id="lista1" >
+                <li>
+                    Pelicula 1
+                </li>
+
+                <li>
+                    Pelicula 2
+                </li>
+
+                <li>
+                    Pelicula 3
+                </li>
+            </ul>
+
+            
+        </div>
+
+        <div>
+            <button id="button2">Genero</button>
+
+            <ul style="list-style: none; display: none;" id="lista2" >
+                <li>
+                    Pelicula 1
+                </li>
+
+                <li>
+                    Pelicula 2
+                </li>
+
+                <li>
+                    Pelicula 3
+                </li>
+            </ul>
+            
+        </div>
+
+        <div>
+            <button id="button3">Duración</button>
+
+            <ul style="list-style: none; display: none;" id="lista3" >
+                <li>
+                    Pelicula 1
+                </li>
+
+                <li>
+                    Pelicula 2
+                </li>
+
+                <li>
+                    Pelicula 3
+                </li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <main>
+            <script>
+                    let listas1 = document.getElementById('lista1');
+                    let listas2 = document.getElementById('lista2');
+                    let listas3 = document.getElementById('lista3');
+                    let button1 = document.getElementById('button1');
+                    let button2 = document.getElementById('button2');
+                    let button3 = document.getElementById('button3'); 
+ 
+
+                    button1.addEventListener('mouseover', function(){
+                    listas1.style.display = 'block';
+                } )
+
+                button1.addEventListener('mouseout', function(){
+                    listas1.style.display = 'none';
+                } )
+
+                button2.addEventListener('click', function(){
+                    listas2.style.display = 'block';
+                } )
+
+                button3.addEventListener('click', function(){
+                    listas3.style.display = 'block';
+                } )
+
+
+            </script>
+    </main>
+
+    <footer>
+            <span>Gracias.</span>
+        
+    </footer>
+
+</body>
+</html>

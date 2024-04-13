@@ -54,11 +54,12 @@
                 Cliente.textContent = datosJson.titular;
                 Nro_cuenta.textContent = datosJson.nro_cuenta;
                 MontoUSD.textContent = datosJson.saldo[0].monto;
-                for(let item of datosJson.saldo){
-                    for( let itemsInd in item){
-                        MontoEUR.textContent = item[itemsInd];
-                    }
-                }
+                MontoEUR.textContent = datosJson.saldo[1].monto;
+                // for(let item of datosJson.saldo){
+                //     for( let itemsInd in item){
+                //         MontoEUR.textContent = item[itemsInd];
+                //     }
+                // }
                 // MontoUSD.textContent = datosJson.saldo[0] ;
                 CBU.textContent = datosJson.cbu ;
                 Apertura.textContent = datosJson.abierto ;

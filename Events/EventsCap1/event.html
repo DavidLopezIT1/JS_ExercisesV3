@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <label for="">Numeros del 1 al Infinito</label>
+    <span>Por favor solo digitar <strong>NÚMEROS</strong></span><br>
+    <input type="text" id="NumberInput">
+
+
+<script>
+
+        let Innnp = document.getElementById('NumberInput');
+
+        function noLetras(event){
+
+            if(event.Keycode < 47 || event.Keycode >58 ){
+                event.preventDefault();
+            }
+        }
+
+        Innnp.addEventListener("keydown", noLetras);
+
+        // Innnp.addEventListener("keyup", function (event) {
+        //         alert(event.target.value)            
+        // })
+
+        Innnp.addEventListener("keypress", function (event) {
+                alert('Caracter ingresado ' + event.key)            
+        })
+
+</script>
+
+
+</body>
+</html>

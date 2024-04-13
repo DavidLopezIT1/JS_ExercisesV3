@@ -1,0 +1,94 @@
+{
+    "Nombre": "David López",
+
+    "Edad": "22 Años",
+
+    "Años_de_Experiencia": 3,
+
+    "Experiencias_Laborales":[{
+    "Compañia": "Agencia de Aduanas Ceva Logistics SAS Nivel 2", 
+    "Cargo": "Asistente de Aduanas", 
+    "Ascensos": "1", 
+    "Nombre_Cargo_del_Ascenso": "Inspector previo"
+    },
+
+    {
+    "Compañia": "openTecnología", 
+    "Cargo": "Asistente de Mesa de Ayuda Aduana", 
+    "Ascensos": "3", 
+    "Nombre_Cargo_del_Ascenso": "Coordinador Mesa de Ayuda Aduana", 
+    "Nombre_Cargo_del_Ascenso_2": "Ingeniero de desarrollo", 
+    "Nombre_Cargo_del_Ascenso_3": "Coordinador de Gerencia de Operaciones" 
+    }],
+    
+    "Nivel_Estudios": "Profesional",
+
+    "Estudios":[{
+    "Nombre_Entidad_Educativa": "Cencabo - Centro de Capacitación Bolivar", 
+    "Nombre_Titulo_Alcanzado":"Técnico En Aduanas"
+    }, 
+    {
+    "Nombre_Entidad_Educativa2": "Universidad Distrital Francisco José de Cáldas - Atenea", 
+    "Nombre_Titulo_Alcanzado2": "Desarrollador Web Full Stack"
+    }, 
+
+    {
+    "Nombre_Entidad_Educativa3": "Sena", 
+    "Nombre_Titulo_Alcanzado3":"Diseñador Gráfico Técnico"
+    }, 
+
+    {
+    "Nombre_Entidad_Educativa4": "Udemy", 
+    "Nombre_Titulo_Alcanzado4":"Desarrollador Web JavaScript" ,
+    "Nombre_Titulo_Alcanzado4_2": "Desarrollador Web PHP y MySQL" 
+    },
+
+    {
+    "Nombre_Entidad_Educativa5": "Corporación Universitaria Minuto de Dios", 
+    "Nombre_Titulo_Alcanzado5":"Ingeniero de Software"
+    }],
+
+    "Tecnologias": [{
+    "NombreTecnologia": "JavaScript"
+    },
+
+    {
+    "NombreTecnologia": "Hypertext Pre-Processor"
+    },
+
+    {
+    "NombreTecnologia": "MySQL"
+    },
+
+    {
+    "NombreTecnologia": "Hypertext Pre-Processor"
+    },
+
+    {
+    "NombreTecnologia": "HyperText Markup Language"
+    },
+
+    {
+    "NombreTecnologia": "Cascade Style Sheets"}],
+   
+    "Habilidades": [{
+    "Nombre": "Desarrollo" 
+    },
+
+    {
+    "Nombre": "Desarrollo" 
+    },
+
+    {
+    "Nombre": "Agilismo" 
+    },
+
+    {
+    "Nombre": "Análisis" 
+    },
+
+    {
+    "Nombre": "Requerimientos Funcionales" 
+    }]
+
+}   
