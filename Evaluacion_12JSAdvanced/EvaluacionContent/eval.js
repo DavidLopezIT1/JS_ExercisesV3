@@ -53,10 +53,25 @@ function buscar(){
     fetch(selector.value).then(promises => promises.json()).then((salida) =>{
         fetchArray=salida;
 
+// Generar la estructura ciclica para iterar el array con los valores del Json
+// Este array NO será iterable hasta que se le asigne el valor (.data), porque este es el indice 
+// o nombre de la etiqueta que contiene el objeto tipo arreglo dentro del archivo Json
+
        for(let item of fetchArray.data){
+
+// Generar una estructura condicional que permita indicar si el valor de un elemento, en este caso
+// el valor del elemento Input del html coincide con el de alguno de los valores del array iterado
+// utilizando la funcion startsWith()
+
         if (item.nombre.startsWith(ElementoInput.value)){
+
+// Generar una nueva variable que cree los elementos de list item
             let listItem= document.createElement('li');
+
+// Añadir el list item al UL del cual ya obtuvimos el GetElementById('');
             UnorderList.appendChild(listItem);
+
+// Darle valor al item list creado y añadido al ul
             listItem.innerText = item.nombre;
         }
        }
