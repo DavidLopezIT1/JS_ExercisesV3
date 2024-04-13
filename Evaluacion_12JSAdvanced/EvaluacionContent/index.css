@@ -1,0 +1,34 @@
+
+body{
+    margin-left: 45%;
+    display: block;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: aliceblue;
+}
+
+ul > li{
+    color: aliceblue;
+    list-style: disc ;
+}
+input{
+    color: aliceblue;
+    border: solid 1px rgba(0, 200, 255, 0.817);
+    background-color: rgba(85, 100, 237, 0.362);
+    border-radius: 3px;
+
+}
+button{
+    color: aliceblue;
+    border: solid 1px rgba(0, 200, 255, 0.817);
+    background-color: rgba(85, 100, 237, 0.362);
+    border-radius: 3px;
+
+}

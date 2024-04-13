@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
     <title>Evaluation Advanced JavaScript</title>
 </head>
 <body>
-    
 
+<header>
+    <div>
+        <strong>SerPelFlix</strong>
 
-    
+        <select name="" id="Selector" style="border: none; background-color: inherit; color: rgb(21, 122, 209);">
+            <option value="" disabled >Criterio</option>
+            <option value="series.json">Series</option>
+            <option value="peliculas.json">Peliculas</option>
+        </select>
+
+    </div>
+</header>
+
+<main>
+    <div>
+        <input type="text" id="Buscador">
+
+        <button id="butonB">Buscar</button>
+        <button id="limpiarCampos" onclick="reloadS()">Limpiar</button>
+    </div>
+
+<br>
+
+    <div id="ResultContainer">
+
+<ul id="UnorderList">
+ 
+</ul>
+
+    </div>
+</main>
+<script src="eval.js"></script>
 </body>
 </html>
